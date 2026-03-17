@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Añadimos estilos de scroll suaves para los enlaces del nav */
+html {
+  scroll-behavior: smooth;
+}
