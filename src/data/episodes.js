@@ -2,9 +2,9 @@ import bansheeImg from '../assets/Images/Banshee.jpeg';
 import reacherImg from '../assets/Images/Reacher.jpg';
 import rookieImg from '../assets/Images/TheRookie.jpg';
 
-import bansheeAudio from '../assets/Audios/Banshee2.mp3';
-import reacherAudio from '../assets/Audios/Reacher2.mp3';
-import rookieAudio from '../assets/Audios/TheRokiee2.mp3';
+import bansheeAudio from '../assets/Audios/Banshee3.mp3';
+import reacherAudio from '../assets/Audios/Reacher3.mp3';
+import rookieAudio from '../assets/Audios/TheRokiee3.mp3';
 
 export const episodes = [
   {
