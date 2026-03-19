@@ -26,8 +26,6 @@ export default function EpisodeDetails() {
 
   return (
     <div className="p-6 md:p-10">
-      
-      {/* Navegación "Breadcrumb" sencilla */}
       <nav aria-label="Ruta de navegación" className="mb-8">
         <ol className="flex text-sm text-slate-500">
           <li>
@@ -39,8 +37,6 @@ export default function EpisodeDetails() {
           <li className="text-slate-800 font-medium truncate" aria-current="page">Episodio #{episode.id}</li>
         </ol>
       </nav>
-
-      {/* Contenido Principal */}
       <div className="max-w-4xl mx-auto">
         <article className="bg-white rounded-lg">
           
@@ -55,8 +51,6 @@ export default function EpisodeDetails() {
               {episode.description}
             </p>
           </header>
-
-          {/* Imagen Destacada del Episodio (Optimizada para no pixelar) */}
           {episode.image && (
             <div className="w-full bg-slate-900 mb-10 rounded-xl overflow-hidden border border-slate-200 shadow-md flex justify-center items-center aspect-video max-h-[500px]">
               <img 
@@ -66,8 +60,6 @@ export default function EpisodeDetails() {
               />
             </div>
           )}
-          
-          {/* Bloque del Reproductor. "Card" dentro de Card */}
           <section aria-labelledby="audio-player-heading" className="bg-slate-50 p-6 rounded-lg border border-slate-200 shadow-inner mb-10">
             <h2 id="audio-player-heading" className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-4 flex items-center gap-2">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
@@ -87,8 +79,6 @@ export default function EpisodeDetails() {
               Para cumplir normativa de accesibilidad, el atributo <code>autoplay</code> está deshabilitado por defecto.
             </p>
           </section>
-
-          {/* Bloque Transcripción Limpio "Estilo Artículo / Guion Simple" */}
           <section aria-labelledby="transcript-heading" className="mt-12 mb-16 max-w-4xl mx-auto">
             
             <div className="mb-6 flex items-center gap-3 border-b-2 border-indigo-100 pb-4">
@@ -106,8 +96,6 @@ export default function EpisodeDetails() {
               <div className="mx-auto space-y-6 text-slate-700">
                 {transcriptParagraphs.map((paragraph, index) => {
                   const isBracket = paragraph.trim().startsWith('[');
-                  
-                  // Direcciones de escena y efectos de sonido
                   if (isBracket) {
                     return (
                       <p key={index} className="text-center italic text-slate-400 text-sm my-8 font-serif">
@@ -115,8 +103,6 @@ export default function EpisodeDetails() {
                       </p>
                     );
                   }
-                  
-                  // Texto estándar
                   return (
                     <p key={index} className="mb-6 text-slate-800 text-xl font-medium leading-relaxed">
                       {paragraph}

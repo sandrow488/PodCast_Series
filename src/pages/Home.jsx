@@ -7,7 +7,6 @@ export default function Home() {
   return (
     <div className="divide-y divide-slate-200 w-full overflow-hidden">
       
-      {/* Hero: Header de ancho total estricto (100vw y sin padding padre) */}
       <section id="inicio" className="w-full mb-12 relative -mt-[1px]">
         <div 
           className="relative bg-slate-900 w-full min-h-[500px] flex items-center justify-center py-16 px-6 md:px-12 lg:min-h-[600px]"
@@ -41,8 +40,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Secciones siguientes: Restableciendo el padding interno para que no peguen a los bordes */}
-      {/* Promoción Video - "Estilo Showcase" */}
       <section id="promocion" className="py-16 px-6 md:px-12 lg:px-24">
         <div className="mb-8 text-center">
           <h2 className="text-3xl font-bold text-slate-800 mb-2">Video de Presentación</h2>
@@ -74,7 +71,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Lista de Episodios: Cards "Material Design" Básico */}
       <section id="episodios" className="py-16 px-6 md:px-12 lg:px-24 border-t border-slate-200">
         <div className="mb-8 pl-4 border-l-4 border-indigo-500">
           <h2 className="text-3xl font-bold text-slate-800">Catálogo de Episodios</h2>
@@ -124,7 +120,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Formulario Estilo UI de Componente Básico */}
       <section id="contacto" className="py-16 px-6 md:px-12 lg:px-24">
         <div className="max-w-2xl mx-auto bg-slate-50 border border-slate-200 rounded-lg p-8 shadow-sm">
           <div className="mb-6 border-b border-slate-200 pb-4">
